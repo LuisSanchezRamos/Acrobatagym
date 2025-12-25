@@ -1,0 +1,11 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  /* cuando indicamos mas fuentes a utilizar, sucede que si no encuentra saltará a la siguiente */
+  font-family: 'Alata', Arial, sans-serif;
+  font-weight: 300;
+}
