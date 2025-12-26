@@ -74,9 +74,27 @@ ul {
 .link {
     color: white;
 }
+.link:hover, .link:active{
+    color: red;
+}
 .inscribete {
     color: white;
     background-color: red;
     padding: 13px 35px 13px 35px;
     font-size: 17px;
 }
+.titulo{
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    z-index: 10;
+    margin: 120px;
+}
+.titulo-secundario {
+    color: red;
+}
+.texto {
+    width: 700px;
+    font-size: 16px;
+    padding-top: 15px;   
+}   
