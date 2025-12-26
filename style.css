@@ -27,7 +27,7 @@ body::before {
     rgba(0,0,0,0.3) 70%,
     transparent 100%
   );
-  z-index: 0;
+  z-index: index 1 ;
 }
 
 
@@ -84,17 +84,53 @@ ul {
     font-size: 17px;
 }
 .titulo{
-    position: absolute;
+    position: relative;
     font-size: 60px;
     color: white;
     z-index: 10;
-    margin: 120px;
+    margin: 120px 120px 30px 120px;
 }
 .titulo-secundario {
     color: red;
 }
+
 .texto {
+    color: rgb(255, 255, 255,0.7);
     width: 700px;
     font-size: 16px;
-    padding-top: 15px;   
-}   
+    padding-top: 15px;
+    margin-bottom: 15px;
+} 
+.btn-solid {
+color: red;
+border: 1px solid red;
+padding: 20px;
+font-size: 10px;
+}
+.estadisticas {
+position: relative;
+display: flex;
+color: rgb(255,255,255,0.7);
+z-index: 1000;
+margin-left: 120px;
+text-align: center;
+gap: 70px;
+width: 1000px;
+
+}
+.estadisticas-generales {
+    display: flex;
+    flex-direction: column;
+    padding-right:70px;
+    
+}
+.estadisticas-generales:nth-child(1), .estadisticas-generales:nth-child(2){
+    border-right: 2px solid red;
+   
+    
+} 
+.titulo-estadisticas {
+    font-size: 35px;
+    color: red;
+
+}
