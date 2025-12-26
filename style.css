@@ -6,13 +6,34 @@
 
 body {
   /* cuando indicamos mas fuentes a utilizar, sucede que si no encuentra saltará a la siguiente */
+ 
   font-family: 'Alata', Arial, sans-serif;
   font-weight: 300;
+  
+  background-image: url(./maquinas.png);
+  
+  background-size: cover;     
+  /* background-position: center; centra la imagen */
+  background-repeat: no-repeat;
 }
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.6) 45%,
+    rgba(0,0,0,0.3) 70%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
 
 h1, h2, h3, h4, h5 {
   font-family: 'Fraunces', serif;
-  font-weight: 300;
+  font-weight: 700; 
 }
 a {
     text-decoration: none;
@@ -35,6 +56,7 @@ ul {
     top: 0;
     z-index: 100000;
     align-items: center;
+    border-bottom: 1px solid white;
 }
 .links {
     display: flex;
@@ -44,4 +66,17 @@ ul {
 }
 .logo {
     font-size: 30px;
+    color: white;
+    
+}.logo2{
+    color: red;
+}
+.link {
+    color: white;
+}
+.inscribete {
+    color: white;
+    background-color: red;
+    padding: 13px 35px 13px 35px;
+    font-size: 17px;
 }
